@@ -19,6 +19,7 @@ class ViewController: UIViewController {
         //        }
         HourlyForecast.downloadHourlyForecast { hourlyForecastArr in
             for data in hourlyForecastArr {
+                // printing forecast data
                 print("forecast data: ", data.temp, data.date, data.weatherIcon)
             }
         }
